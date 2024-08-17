@@ -21,10 +21,11 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> MOD_OF_SOUL_ITEMS_TAB =
             CREATIVE_MODE_TAB.register("mod_of_soul_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.FIRSTSOUL.get()))
+                    .icon(() -> new ItemStack(ModItems.FIRSTSOUL.get())) // Icon that appears on the tab
                     .title(Component.translatable("creativetab.modofsoul.mod_of_soul"))
                     .displayItems((itemDisplayParameters, output) -> { //Add items in here
                         output.accept(ModItems.FIRSTSOUL);
+                        output.accept(ModItems.SOUL);
                         output.accept(ModBlocks.COMPACTSOUL);
                     })
                     .build());

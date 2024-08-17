@@ -11,8 +11,10 @@ public class ModItems {
     // Kind of like a List of items
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ModOfSoul.MODID);
 
-    // The First Star item details
+    // The First Soul item details
     public static final DeferredItem<Item> FIRSTSOUL = ITEMS.register("firstsoul",() -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SOUL = ITEMS.register("soul",() -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
