@@ -1,6 +1,6 @@
-package net.kndude.knmod.item;
+package net.kndude.modofsoul.item;
 
-import net.kndude.knmod.ModOfSoul;
+import net.kndude.modofsoul.ModOfSoul;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,6 +15,8 @@ public class ModItems {
     public static final DeferredItem<Item> FIRSTSOUL = ITEMS.register("firstsoul",() -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> SOUL = ITEMS.register("soul",() -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SOULINGOT = ITEMS.register("soulingot",() -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

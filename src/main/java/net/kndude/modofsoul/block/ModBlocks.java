@@ -1,7 +1,7 @@
-package net.kndude.knmod.block;
+package net.kndude.modofsoul.block;
 
-import net.kndude.knmod.ModOfSoul;
-import net.kndude.knmod.item.ModItems;
+import net.kndude.modofsoul.ModOfSoul;
+import net.kndude.modofsoul.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

@@ -1,7 +1,7 @@
-package net.kndude.knmod.item;
+package net.kndude.modofsoul.item;
 
-import net.kndude.knmod.ModOfSoul;
-import net.kndude.knmod.block.ModBlocks;
+import net.kndude.modofsoul.ModOfSoul;
+import net.kndude.modofsoul.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIRSTSOUL);
                         output.accept(ModItems.SOUL);
                         output.accept(ModBlocks.COMPACTSOUL);
+                        output.accept(ModItems.SOULINGOT);
                     })
                     .build());
 
