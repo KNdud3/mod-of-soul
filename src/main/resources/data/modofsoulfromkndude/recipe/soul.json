@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "modofsoulfromkndude:compactsoul"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "modofsoulfromkndude:soul"
+  }
+}

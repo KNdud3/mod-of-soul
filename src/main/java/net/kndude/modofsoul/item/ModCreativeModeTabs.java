@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -28,6 +29,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SOUL);
                         output.accept(ModBlocks.COMPACTSOUL);
                         output.accept(ModItems.SOULINGOT);
+                        output.accept(ModItems.SOULAXE.get());
+                        output.accept(ModItems.SOULPICKAXE.get());
+                        output.accept(ModItems.SOULHOE.get());
+                        output.accept(ModItems.SOULSHOVEL.get());
                     })
                     .build());
 
