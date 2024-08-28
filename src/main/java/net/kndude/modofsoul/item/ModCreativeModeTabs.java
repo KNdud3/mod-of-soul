@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SOUL);
                         output.accept(ModBlocks.COMPACTSOUL);
                         output.accept(ModItems.SOULINGOT);
+                        output.accept(ModItems.SOULWAND);
                         output.accept(ModItems.SOULAXE.get());
                         output.accept(ModItems.SOULPICKAXE.get());
                         output.accept(ModItems.SOULHOE.get());

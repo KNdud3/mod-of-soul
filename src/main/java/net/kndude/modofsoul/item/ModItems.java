@@ -1,6 +1,7 @@
 package net.kndude.modofsoul.item;
 
 import net.kndude.modofsoul.ModOfSoul;
+import net.kndude.modofsoul.item.complex.SoulFireWandItem;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -22,6 +23,9 @@ public class ModItems {
     public static final DeferredItem<Item> SOUL = ITEMS.register("soul",() -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> SOULINGOT = ITEMS.register("soulingot",() -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SOULWAND = ITEMS.register("soulwand",() -> new SoulFireWandItem(
+            new Item.Properties().durability(100)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
