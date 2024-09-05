@@ -1,6 +1,8 @@
 package net.kndude.modofsoul.item.complex;
 
 import net.kndude.modofsoul.projectiles.SoulFireball;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -11,6 +13,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+
+import java.util.List;
 
 public class SoulFireWandItem extends Item {
     public SoulFireWandItem(Properties properties){
@@ -49,5 +53,17 @@ public class SoulFireWandItem extends Item {
             }
             return InteractionResultHolder.consume(itemstack);
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        if (Screen.hasShiftDown()){
+            tooltipComponents.add(Component.translatable("tooltip.modOfSoul.soulwand.shiftDown"));
+        }
+        else{
+            tooltipComponents.add(Component.translatable("tooltip.modOfSoul.soulwand"));
+        }
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

@@ -31,7 +31,7 @@ public class SoulFireball extends Fireball {
     }
 
     /**
-     * Called when the arrow hits an entity
+     * Called when the projectile hits an entity
      */
     @Override
     protected void onHitEntity(EntityHitResult result) {

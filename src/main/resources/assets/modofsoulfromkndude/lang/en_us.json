@@ -11,5 +11,8 @@
 
   "block.modofsoulfromkndude.compactsoul": "Compact Soul",
 
-  "creativetab.modofsoul.mod_of_soul": "Mod Of Soul"
+  "creativetab.modofsoul.mod_of_soul": "Mod Of Soul",
+
+  "tooltip.modOfSoul.soulwand.shiftDown": "Hold §eRight-Click§r to Shoot Fireballs",
+  "tooltip.modOfSoul.soulwand": "§eShift§r for more Information"
 }
