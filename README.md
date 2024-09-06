@@ -1,4 +1,7 @@
+This is a minecraft neoforge mod still under development. The aim of the mod is to add a new soul forest biome into the Nether dimension
+where soul can be harvested from enemies to make tools and weapons. The neoforge readme info is all below if needed.
 
+=======
 Installation information
 =======
 
