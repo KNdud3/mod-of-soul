@@ -39,8 +39,10 @@ public class SoulFireball extends Fireball {
         if (this.level() instanceof ServerLevel serverlevel) {
             Entity entity1 = result.getEntity();
             Entity $$4 = this.getOwner();
+            System.out.println($$4);
+            System.out.println($$4 == entity1);
             int $$5 = entity1.getRemainingFireTicks();
-            entity1.igniteForSeconds(5.0F);
+            entity1.igniteForSeconds(2.0F);
             DamageSource $$6 = this.damageSources().fireball(this, $$4);
             if (!entity1.hurt($$6, 5.0F)) {
                 entity1.setRemainingFireTicks($$5);

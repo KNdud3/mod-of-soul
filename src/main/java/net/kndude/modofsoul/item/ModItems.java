@@ -49,7 +49,7 @@ public class ModItems {
 
     public static final Supplier<AxeItem> SOULAXE = ITEMS.register("soulaxe", () -> new AxeItem(SOULTIER,new Item.Properties().attributes(
     AxeItem.createAttributes(
-            SOULTIER, 3,-3
+            SOULTIER, 6,-2
             )
         )
     ));
@@ -67,7 +67,7 @@ public class ModItems {
     ));
     public static final Supplier<HoeItem> SOULHOE = ITEMS.register("soulhoe", () -> new HoeItem(SOULTIER,new Item.Properties().attributes(
             HoeItem.createAttributes(
-                    SOULTIER, -3.5f,-3f
+                    SOULTIER, -4f,0f
             )
     )
     ));

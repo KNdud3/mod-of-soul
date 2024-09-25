@@ -45,7 +45,8 @@ public class SoulFireWandItem extends Item {
                 Vec3 position = player.getEyePosition();
 
                 // Create and launch a small fireball
-                SoulFireball fireball = new SoulFireball(level, look.x, look.y, look.z, look);
+                SoulFireball fireball = new SoulFireball(level, look.x, look.y-1, look.z, look);
+                fireball.setOwner(player);
                 fireball.setPos(position.x, position.y, position.z);
                 level.addFreshEntity(fireball); // Add the fireball entity to the world
 
